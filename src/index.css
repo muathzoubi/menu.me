@@ -1,0 +1,64 @@
+:root {
+  font-family: Inter, system-ui, Avenir, Helvetica, Arial, sans-serif;
+
+  color: rgba(255, 255, 255, 0.87);
+  background-color: #242424;
+}
+
+a {
+  font-weight: 500;
+  color: #646cff;
+  text-decoration: inherit;
+}
+a:hover {
+  color: #535bf2;
+}
+
+body {
+  margin: 0;
+  display: flex;
+  place-items: center;
+  fill-opacity: 1;
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 100vh;
+  width: 100vw;
+  cursor: url('https://img.icons8.com/external-tal-revivo-fresh-tal-revivo/28/000000/external-mouse-cursor-pointer-arrow-head-isolated-on-white-background-selection-fresh-tal-revivo.png'),
+    alias;
+}
+.bg {
+  background-size: contain;
+  width: 100%;
+  filter: brightness(55%);
+}
+h1 {
+  font-size: 3.2em;
+  line-height: 1.1;
+}
+
+button:focus,
+button:focus-visible {
+  outline: 4px auto -webkit-focus-ring-color;
+}
+
+@media (prefers-color-scheme: light) {
+  :root {
+    color: #213547;
+    background-color: #ffffff;
+  }
+  a:hover {
+    color: #747bff;
+  }
+  button {
+    background-color: #f9f9f9;
+  }
+}
+.cardinfo {
+  position: fixed;
+  right: 5%;
+  top: 5%;
+  height: 250px;
+  width: 200px;
+  background-color: #213547a9;
+  border-radius: 5px;
+}
