@@ -10,8 +10,6 @@ import {
   list14,
   list15,
   list2,
-  list3,
-  list6,
 } from './config';
 
 function App() {
