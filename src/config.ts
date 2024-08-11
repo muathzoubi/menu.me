@@ -41,50 +41,7 @@ export const list2 = [
     href: '#',
   },
 ];
-export const list3 = [
-  {
-    name: 'File',
-    imglink: 'https://img.icons8.com/cotton/64/document--v2.png',
-    href: '#',
-  },
-  {
-    name: 'Folder',
-    imglink: 'https://img.icons8.com/color/48/folder-invoices--v1.png',
-    href: '#',
-  },
-];
-export const list6 = [
-  {
-    name: 'Chrome',
-    imglink: 'https://img.icons8.com/color/48/chrome--v1.png ',
-    href: '#',
-  },
-  {
-    name: 'Facebook',
-    imglink: 'https://img.icons8.com/color/48/facebook.png',
-    href: '#',
-  },
-  {
-    name: 'File',
-    imglink: 'https://img.icons8.com/cotton/64/document--v2.png',
-    href: '#',
-  },
-  {
-    name: 'Folder',
-    imglink: 'https://img.icons8.com/color/48/folder-invoices--v1.png',
-    href: '#',
-  },
-  {
-    name: 'File',
-    imglink: 'https://img.icons8.com/cotton/64/document--v2.png',
-    href: '#',
-  },
-  {
-    name: 'Folder',
-    imglink: 'https://img.icons8.com/color/48/folder-invoices--v1.png',
-    href: '#',
-  },
-];
+
 export const list9 = [
   {
     name: 'Chrome',
