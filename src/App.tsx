@@ -11,6 +11,7 @@ import {
   list15,
   list2,
 } from './config';
+import Tools from './Tools';
 
 function App() {
   const [actionName, setActionName] = useState('');
@@ -18,14 +19,18 @@ function App() {
   const [y, setY] = useState(0);
 
   return (
+    <>
+      
+      <video autoPlay muted loop id="myVideo">
+  <source src="https://cdn.jsdelivr.net/gh/alvarotrigo/fullpage-assets/videos/waterfall.webm" type="video/mp4"/>
+</video>
     <div
-      className=""
+      className="main"
       onMouseMove={(e) => {
         setY(e.clientY);
         setX(e.clientX);
       }}
-    >
-      <Swipera />
+    ><Tools/>
       <div className="cardinfo" style={{}}>
         Action Name : {actionName}
         <br />
@@ -39,6 +44,7 @@ function App() {
       >
         {list1.map((i, key) => (
           <Hex
+          className='bg'
             key={key}
             imglink={i.imglink}
             action={i.name}
@@ -70,6 +76,8 @@ function App() {
         {list13.map((i, key) => (
           <Hex
             key={key}
+          className='bg'
+
             imglink={i.imglink}
             action={i.name}
             setActionName={setActionName}
@@ -84,6 +92,8 @@ function App() {
       >
         {list14.map((i, key) => (
           <Hex
+          className='bg'
+
             key={key}
             imglink={i.imglink}
             action={i.name}
@@ -99,6 +109,8 @@ function App() {
       >
         {list12.map((i, key) => (
           <Hex
+          className='bg'
+
             key={key}
             imglink={i.imglink}
             action={i.name}
@@ -115,7 +127,8 @@ function App() {
         {list10.map((i, key) => (
           <Hex
             key={key}
-            imglink={i.imglink}
+          className='bg'
+          imglink={i.imglink}
             action={i.name}
             setActionName={setActionName}
           />
@@ -132,7 +145,8 @@ function App() {
             key={key}
             imglink={i.imglink}
             action={i.name}
-            setActionName={setActionName}
+          className='bg'
+          setActionName={setActionName}
           />
         ))}
       </div>{' '}
@@ -163,10 +177,13 @@ function App() {
             imglink={i.imglink}
             action={i.name}
             setActionName={setActionName}
+          className='bg'
+
           />
         ))}
       </div>
     </div>
+    </>
   );
 }
 

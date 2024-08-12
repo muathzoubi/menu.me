@@ -5,35 +5,17 @@
   text-align: center;
   zoom: 75%;
 }
-svg {
-  filter: drop-shadow(rgba(255, 255, 255, 0.5) 0px 0px 10px);
-}
+
 .logo {
   height: 3.9em;
   scale: 1.4;
   will-change: filter;
   transition: filter 300ms;
 }
+
+
 .logo:hover {
-  filter: drop-shadow(0 0 2em #646cffaa);
-}
-.logo.react:hover {
-  filter: drop-shadow(0 0 2em #61dafbaa);
-}
-
-@keyframes logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
-}
-
-@media (prefers-reduced-motion: no-preference) {
-  a:nth-of-type(2) .logo {
-    animatin: logo-spin infinite 20s linear;
-  }
+  fill: rgba(0, 0, 0, 1.7)
 }
 
 .card {
@@ -44,45 +26,40 @@ svg {
   color: #888;
 }
 
-svg:hover {
-  scale: 1.5;
-
-  filter: brightness(100%);
-  fill: rgba(255, 255, 255, 0.8);
-}
 svg {
   height: 70px;
-  filter: brightness(50%);
-  fill: rgba(0, 0, 0, 1);
   scale: 1.4;
   transition: all 0.7s;
   width: 50px;
   margin-left: 11px;
   margin-right: 11px;
-  animation-name: anim;
-  animation-duration: 11s;
 }
-svg {
-  filter: drop-shadow(2px 2px 13px #fff);
+
+
+
+#myVideo {
+  position: fixed;
+  right: 0;
+  bottom: 0;
+  min-width: 100%;
+  min-height: 100%;
 }
-svg path:hover {
-  z-index: 99999;
-  filter: drop-shadow(2px 2px 13px #fff);
-  fill: #fff;
+
+/* Add some content at the bottom of the video/page */
+.content {
+  position: fixed;
+  bottom: 0;
+  background: rgba(0, 0, 0, 0.5);
+  color: #f1f1f1;
+  width: 100%;
+  padding: 20px;
 }
-@keyframes anim {
-  from {
-    opacity: 0;
-  }
-  to {
-    opacity: 1;
-  }
+.nav-items{
+  display: flex;
+  justify-content: center;
 }
-@keyframes ainm {
-  from {
-    opacity: 0;
-  }
-  to {
-    opacity: 1;
-  }
+ul li{
+  padding: 4px;
+  border: 1px yellow solid;
+  border-radius: 5px;
 }

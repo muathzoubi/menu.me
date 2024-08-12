@@ -28,7 +28,6 @@ margin: 0;
 .bg {
   background-size: contain;
   width: 100%;
-  filter: brightness(55%);
 }
 h1 {
   font-size: 3.2em;
@@ -61,3 +60,48 @@ button:focus-visible {
   background-color: #213547a9;
   border-radius: 5px;
 }
+.full{
+  position: fixed;
+  top: 1%;
+  left: 1%;
+  padding: 7px;
+  background-color: rgba(0, 0, 0, 0.4) ;
+  border-radius: 5px;
+
+}
+.full:hover{
+  border:1px red solid;
+}
+.tools{
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+}
+svg{
+  margin-left: 15px;
+  margin-right: 15px;
+  fill: rgba(220, 220, 220, 0.568);
+}
+.bg{
+animation:  moveon 1.5s  linear ;
+}
+
+svg:hover{
+  scale: 1.7;  
+  fill: rgba(0, 0, 0, 0.7);
+
+}
+@keyframes moveon {
+  from{
+    margin-left: -50px;
+    margin-right: -50px;
+    
+  }
+  to {
+    margin-left: 0;
+    margin-right: 0;
+  }
+  
+}
+ul{list-style: none;}
