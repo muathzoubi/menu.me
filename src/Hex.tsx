@@ -1,5 +1,4 @@
 const Hex = (props: any) => {
-
   return (
     <span
       className={props.className}

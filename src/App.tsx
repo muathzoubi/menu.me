@@ -30,12 +30,13 @@ function App() {
         setY(e.clientY);
         setX(e.clientX);
       }}
-    ><Tools/>
+    >
       <div className="cardinfo" style={{}}>
-        Action Name : {actionName}
-        <br />
-        x:{x} y:{y}
+      
+      <img src='./applogo.png' width={150}/>
+      <h3>SGS Gird</h3>
       </div>
+
       <div
         style={{
           display: 'flex',
@@ -44,7 +45,7 @@ function App() {
       >
         {list1.map((i, key) => (
           <Hex
-          className='bg'
+          className=''
             key={key}
             imglink={i.imglink}
             action={i.name}
