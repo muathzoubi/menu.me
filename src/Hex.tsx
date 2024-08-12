@@ -2,12 +2,6 @@ const Hex = (props: any) => {
   return (
     <span
       className={props.className}
-      onMouseOver={() => {
-        props.setActionName(props.action);
-      }}
-      onMouseLeave={() => {
-        props.setActionName('');
-      }}
       key={props.key}
     >
       <svg
